@@ -9,7 +9,7 @@ Summary:	HTML::StripScripts::Parser - XSS filter using HTML::Parser
 Summary(pl.UTF-8):	HTML::StripScripts::Parser - filtr XSS używający HTML::Parser
 Name:		perl-HTML-StripScripts-Parser
 Version:	1.02
-Release:	1
+Release:	2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTML/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -57,5 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/HTML/StripScripts
 %{perl_vendorlib}/HTML/StripScripts/*.pm
 %{_mandir}/man3/*
